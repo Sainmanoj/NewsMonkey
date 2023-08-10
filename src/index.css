@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+*{
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  
+}
+h1{
+  font-size: 25px;
+  margin:10px 0px;
+}
+.card{
+  margin: 10px auto;
+  box-shadow: 2px 0px 2px rgba(0,0,0,0.1);
+}
+.card h5{
+  font-size: 16px;
+  font-weight: bolder;
+}
+.card p{
+  font-size: 13px;
+}
+.badge{
+  z-index: 1;
+  left: 90%!important;
+}
