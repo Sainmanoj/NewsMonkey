@@ -16,7 +16,7 @@ export default class News extends Component {
     }
     updateNews = async () => {
         let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=086e0ef84deb47419e8dbf9cb6b99f6c&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-        let data = await fetch(url,{ 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': '*','Access-Control-Allow-Headers': '*' } });
+        let data = await fetch(url,{ 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': 'http://localhost:5173' } });
         let parseData = await data.json();
         console.log(parseData)
         this.setState({
