@@ -16,8 +16,8 @@ export default class News extends Component {
     }
     updateNews = async () => {
         const proxyUrl="https://cryptic-headland-94862.herokuapp.com/";
-        let url = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=086e0ef84deb47419e8dbf9cb6b99f6c&page=${this.state.page}&pageSize=${this.props.pageSize}`;
-        let data = await fetch(url);
+        let url = `https://newsapi.org/v2/top-headlines?country=in&category=${this.props.category}&apiKey=086e0ef84deb47419e8dbf9cb6b99f6c&page=${this.state.page}&pageSize=${this.props.pageSize}`;
+        let data = await fetch(url,{mode:'cors'});
         let parseData = await data.json();
         console.log(parseData)
         this.setState({
